@@ -45,7 +45,7 @@ export class ContactComponent implements OnInit {
   }
 
   getErrorStringMessage() {
-    if (this.FormData.controls['name'].hasError('required')) {
+    if (this.FormData.controls['message'].hasError('required')) {
       return 'Această casetă trebuie completată.';
     }
     return '';
