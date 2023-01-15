@@ -1,0 +1,29 @@
+#contact-style {
+  text-align: center;
+  border: 10px solid #b6ae91;
+  background-color: #ebe1bf;
+  margin: 40px;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  #contact-form-style {
+    text-align: center;
+    border: 10px solid #38362c;
+    background-color: #4d493e;
+    border-radius: 20px;
+    margin: 30px;
+    margin-left: 35%;
+    margin-right: 35%;
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+}

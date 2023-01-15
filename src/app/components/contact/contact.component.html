@@ -1,0 +1,50 @@
+<div id="contact-style">
+  <h1>Contactează-ne! Îți vom răspunde cât de repede putem.</h1>
+  <div id="contact-form-style">
+    <form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
+      <mat-form-field appearance="fill">
+        <mat-label>Email</mat-label>
+        <input
+          matInput
+          placeholder="name@example.com"
+          type="email"
+          formControlName="email"
+          required
+        />
+        <mat-error *ngIf="this.FormData.controls['email'].invalid">{{
+          getErrorStringEmail()
+        }}</mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Nume</mat-label>
+        <input
+          matInput
+          placeholder="Popescu Mihai"
+          formControlName="name"
+          required
+        />
+        <mat-error *ngIf="this.FormData.controls['name'].invalid">{{
+          getErrorStringName()
+        }}</mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Mesaj</mat-label>
+        <textarea
+          matInput
+          placeholder="Mesaj"
+          formControlName="message"
+          required
+        ></textarea>
+        <mat-error *ngIf="this.FormData.controls['message'].invalid">{{
+          getErrorStringMessage()
+        }}</mat-error>
+      </mat-form-field>
+
+      <button mat-flat-button type="submit" [disabled]="!FormData.valid">
+        Submit
+      </button>
+    </form>
+  </div>
+</div>

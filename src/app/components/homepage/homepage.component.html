@@ -1,0 +1,84 @@
+<div id="homepage-style">
+  <h1>
+    &emsp;Bun venit pe <b>adopta-animale.ro</b>! Mai jos vei găsi informații
+    utile despre site-ul nostru.
+  </h1>
+  <br>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porta in erat
+  in lacinia. Duis turpis ex, volutpat non lorem ac, fermentum dignissim velit.
+  Duis commodo nisi elit, vel malesuada quam elementum quis. Quisque lacinia
+  pellentesque est, ac malesuada tellus fermentum ac. Morbi ac ex nec leo semper
+  mollis maximus ut nulla. Aliquam non ultrices sapien. Curabitur eu tincidunt
+  ex. Aliquam erat volutpat. Fusce gravida turpis ac orci hendrerit, non ornare
+  nibh consequat. Maecenas pretium ante in mauris dictum condimentum a nec
+  tortor. Nullam sollicitudin libero turpis, at consequat lectus gravida vel.
+  Quisque non sollicitudin lacus. Praesent sit amet iaculis nunc, cursus euismod
+  quam. Sed malesuada, est a eleifend efficitur, nisi sapien lacinia nulla, et
+  tincidunt lectus arcu in neque. Nam hendrerit felis ut enim dignissim
+  pellentesque. Nulla ac tellus sed erat dignissim vulputate. Phasellus quis dui
+  eget quam feugiat rutrum. Vestibulum vestibulum lacus ut urna pretium
+  tincidunt ullamcorper at quam. Praesent a ante neque. Aliquam in mollis nunc.
+  Donec eu nunc in orci eleifend iaculis vitae a nisl. Curabitur scelerisque
+  auctor vestibulum. Sed faucibus neque sem, a faucibus augue tempor ut. Nam
+  auctor tristique commodo. Donec tempus egestas tempus. Vivamus dictum lectus
+  ut volutpat volutpat. Duis mattis at nulla vel tempus. Ut placerat arcu
+  lectus, sed cursus purus rutrum vel. Suspendisse potenti. In aliquet lacus non
+  ullamcorper dapibus. Donec suscipit, ipsum consequat rutrum tempus, magna mi
+  imperdiet odio, a feugiat ex libero vel ex. Curabitur nec massa a felis
+  imperdiet congue. Duis vitae ornare massa, auctor finibus leo. Phasellus
+  pellentesque sodales erat ac auctor. Curabitur finibus mi ut nibh tristique
+  maximus. Curabitur ullamcorper nibh id nulla venenatis pharetra. Phasellus est
+  quam, dignissim at molestie nec, porta ac quam. Sed nec felis cursus, pretium
+  augue in, mollis augue. Sed porta diam a dolor sagittis porta. Donec luctus mi
+  id efficitur fermentum. Praesent pellentesque lacus vel volutpat aliquet.
+  Aenean accumsan scelerisque metus sed malesuada. Nam euismod lacus urna, vitae
+  placerat risus volutpat id. Donec varius leo ac orci volutpat, sit amet
+  interdum massa consequat. Morbi nec quam dapibus, convallis ligula non, auctor
+  ipsum. Ut nisi urna, suscipit quis eros blandit, pharetra imperdiet justo.
+  Suspendisse turpis ex, cursus id feugiat non, varius aliquam tortor. Nullam
+  porttitor risus sit amet imperdiet luctus. Sed metus leo, hendrerit id turpis
+  ut, dictum hendrerit lectus. Vestibulum ut tempus ante. Mauris in augue
+  vulputate, facilisis ligula non, tincidunt eros. Curabitur varius massa eget
+  nulla placerat, eget gravida quam eleifend. Curabitur sed nisl dui. Donec vel
+  purus id sem tempus auctor fermentum nec est. Sed eget ullamcorper turpis. Nam
+  sed leo id eros egestas euismod. Nullam sollicitudin risus vel leo gravida
+  lobortis. Praesent condimentum tellus nec viverra tincidunt. Ut sodales sed
+  sapien in dapibus. Nam vitae mi metus. Mauris vitae purus eget sapien blandit
+  luctus. Mauris eget ipsum aliquam, scelerisque ex non, blandit erat. Quisque
+  vitae lacinia felis. Nullam facilisis eleifend ullamcorper. Fusce non ligula
+  vitae neque aliquet tincidunt non nec magna. Vivamus non tincidunt quam.
+  Aenean vitae ex in mauris eleifend laoreet eget non libero. Proin feugiat non
+  nisl sit amet maximus. Nunc in laoreet nisi. Sed eu diam vitae eros euismod
+  imperdiet consequat a ligula.
+  <br><br>
+  <h1>
+    &emsp;În tabelul de mai jos puteți observa statisticile de adopție.
+  </h1>
+
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+    <ng-container matColumnDef="position">
+      <th mat-header-cell *matHeaderCellDef>Nr.</th>
+      <td mat-cell *matCellDef="let element">{{ element.position }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef>Animal</th>
+      <td mat-cell *matCellDef="let element">{{ element.name }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="adopted">
+      <th mat-header-cell *matHeaderCellDef>Număr de animale adoptate</th>
+      <td mat-cell *matCellDef="let element">{{ element.adopted }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="available">
+      <th mat-header-cell *matHeaderCellDef>Animale disponibile pentru adopție</th>
+      <td mat-cell *matCellDef="let element">{{ element.available }}</td>
+    </ng-container>
+
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+</div>

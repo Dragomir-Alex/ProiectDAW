@@ -1,0 +1,38 @@
+#toolbar-style {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+
+  #logo-button {
+    background-image: url("../assets/menus/logo.png");
+    background-size: cover;
+    width: 200px;
+    height: 100px;
+  }
+
+  img {
+    width: 195px;
+    height: 150px;
+    object-fit: scale-down;
+  }
+
+  footer {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+  }
+
+  button {
+    left: 48.5vw;
+    bottom: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+  }
+
+  a { color: inherit; }
+}

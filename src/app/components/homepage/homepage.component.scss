@@ -1,0 +1,19 @@
+#homepage-style {
+  text-align: left;
+
+  border: 10px solid #b6ae91;
+  background-color: #ebe1bf;
+  margin: 40px;
+  border-radius: 20px;
+  padding: 20px;
+  line-height: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  table {
+    width: 100%;
+  }
+
+  .mat-cell {
+    width: 100px;
+  }
+}
